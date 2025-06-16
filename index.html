@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>黃彥瑞 個人網站</title>
+    <!-- 載入CSS樣式 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 導覽列區塊 -->
+    <div class="navbar">
+        <a href="#" id="nav-home" class="active">首頁</a>
+        <a href="#" id="nav-about">我的介紹</a>
+        <a href="#" id="nav-experience">我的經歷</a>
+        <a href="#" id="nav-project">專題作業</a>
+    </div>
+    <!-- 主要內容區塊 -->
+    <div class="main-content">
+        <!-- 頭像區塊 -->
+        <div class="avatar-container">
+            <img src="avatar.png" class="avatar" alt="頭像">
+        </div>
+
+        <!-- 歡迎區塊（首頁專用） -->
+        <div id="welcome-text">
+            <!-- 社群連結圖片按鈕 -->
+            <div class="social-links">
+                <a href="https://instagram.com/rui_.1105" target="_blank">
+                    <img src="instagram.jpg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://discord.com/users/rui_.1105" target="_blank">
+                    <img src="discord.jpg" alt="Discord" class="social-icon">
+                </a>
+            </div>
+            <h2>歡迎來到我的網頁</h2>
+        </div>
+
+        <!-- 我的介紹區塊 -->
+        <div class="section" id="about-section">
+            <h2>我的介紹</h2>
+            <p>
+                姓名:黃彥瑞<br>
+                年齡:18<br>
+                目前就讀於南台科技大學<br>
+                興趣是寫程式看風景。<br>
+                這是我的個人網站，歡迎交流！
+            </p>
+        </div>
+        <!-- 我的經歷區塊 -->
+        <div class="section" id="experience-section">
+            <h2>我的經歷</h2>
+            <p>
+                學過Python、JavaScript、HTML/CSS、C++ 等。<br>
+                專案經驗:<br>
+                和他人研究 <a href="#" id="car-link">自走車</a><br>
+                簡易問答機器人(未完成)<br>
+                簡易紅外線距離感測<a href="#" id="machine-link">機器</a>
+            </p>
+        </div>
+        <!-- 專題作業區塊 -->
+        <div class="section" id="project-section">
+            <h2>專題作業</h2>
+            <ul style="text-align:left; list-style:none; padding-left:0;">
+                <li style="padding-left:80px;"><a href="static/waterpuzzle/index.html" target="_blank">功課一:Waterpuzzle</a></li>
+                <li style="padding-left:80px;"><a href="static/multiplication/index.html" target="_blank">功課二:multiplication</a></li>
+                <li style="padding-left:80px;"><a href="https://rui91105.github.io/homework/" target="_blank">功課三:github.io</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 頁尾區塊 -->
+    <div class="footer">
+        黃彥瑞 個人網站
+    </div>
+    <!-- 自走車影片彈窗 -->
+    <div id="video-modal" style="display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:999;">
+        <div style="position:relative; width:80vw; max-width:600px;">
+            <span id="close-video" style="position:absolute; right:10px; top:5px; color:white; font-size:28px; cursor:pointer;">&times;</span>
+            <video id="car-video" width="100%" controls>
+            </video>
+        </div>
+    </div>
+    <!-- 機器圖片彈窗 -->
+    <div id="image-modal" style="display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:999;">
+        <div style="position:relative; width:80vw; max-width:400px;">
+            <span id="close-image" style="position:absolute; right:10px; top:5px; color:white; font-size:28px; cursor:pointer;">&times;</span>
+            <img id="machine-image" src="machine.jpg" alt="機器圖片" style="width:100%;border-radius:8px;">
+        </div>
+    </div>
+    <!-- 載入JS腳本 -->
+    <script src="js.js"></script>
+</body>
+</html>

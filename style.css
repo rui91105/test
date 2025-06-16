@@ -1,0 +1,114 @@
+/* 頁面整體設定 */
+body {
+    margin: 0;
+    font-family: 'Microsoft JhengHei', Arial, sans-serif; /* 使用微軟正黑體或備用字型 */
+    background: url('banner.png') no-repeat center center fixed; /* 背景圖片 */
+    background-size: cover; /* 背景填滿 */
+    min-height: 100vh; /* 最小高度為視窗高度 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 導覽列樣式 */
+.navbar {
+    background: #0091b2; /* 藍色背景 */
+    color: #fff;
+    display: flex;
+    justify-content: center; /* 置中 */
+    align-items: center;
+    padding: 0;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 導覽列連結樣式 */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px; /* 左右間距 */
+    transition: opacity 0.2s;
+}
+
+/* 滑鼠移過或選取時透明度變淡 */
+.navbar a.active, .navbar a:hover {
+    opacity: 0.7;
+}
+
+/* 主要內容區塊 */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: -30px;
+}
+
+/* 頭像圖片樣式 */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 圓形 */
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+/* 歡迎文字樣式 */
+.welcome {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* 各內容區塊 section 預設隱藏 */
+.section {
+    display: none;
+    background: rgba(255,255,255,0.85); /* 半透明白底 */
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 20px;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* 被選取的 section 顯示 */
+.section.active {
+    display: block;
+}
+
+/* 頁尾樣式 */
+.footer {
+    background: #0091b2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* 社群連結區塊樣式 */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+/* 社群圖片按鈕樣式 */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* 滑鼠移過時放大效果 */
+.social-icon:hover {
+  transform: scale(1.1);
+}
