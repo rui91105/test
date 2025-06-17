@@ -66,14 +66,13 @@ body {
 /* 各內容區塊 section 預設隱藏 */
 .section {
     display: none;
-    background: rgba(255,255,255,0.85); /* 半透明白底 */
+    background: rgba(255,255,255,0.85);
     border-radius: 12px;
     padding: 30px 40px;
     margin-top: 20px;
     min-width: 300px;
     max-width: 600px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 /* 被選取的 section 顯示 */
@@ -111,4 +110,52 @@ body {
 /* 滑鼠移過時放大效果 */
 .social-icon:hover {
   transform: scale(1.1);
+}
+
+/* 資訊區塊樣式 */
+.info-block {
+  flex: 1;
+  padding: 10px 20px;   /* 上下間距縮小 */
+  /* 移除白色背景 */
+  background: none;
+  box-shadow: none;
+  margin-bottom: 6px;   /* 增加這行，縮小區塊之間的間隔 */
+}
+
+.info-block h2 {
+  color: #00b8d4;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.info-block .emoji {
+  font-size: 1.4em;
+  margin-right: 8px;
+}
+
+.info-block ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+/* 讓 info-block 左右排列 */
+.info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  white-space: nowrap;
 }

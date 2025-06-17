@@ -37,29 +37,46 @@
 
         <!-- 我的介紹區塊 -->
         <div class="section" id="about-section">
-            <h2>我的介紹</h2>
-            <p>
-                姓名:黃彥瑞<br>
-                年齡:18<br>
-                目前就讀於南台科技大學<br>
-                興趣是寫程式看風景。<br>
-                這是我的個人網站，歡迎交流！
-            </p>
+            <!-- 姓名區塊 -->
+            <div class="info-block" style="margin-bottom: 10px;">
+                <h2>姓名：<span style="color: #000; font-weight: 400; font-size: 0.8em;">黃彥瑞</span></h2>
+            </div>
+            <!-- 學校區塊 -->
+            <div class="info-block" style="margin-bottom: 10px;">
+                <h2>學校：<span style="color: #000; font-weight: 400; font-size: 0.8em;">南台科技大學</span></h2>
+            </div>
+            <!-- 興趣區塊 -->
+            <div class="info-block" style="margin-bottom: 0;">
+                <h2>興趣：<span style="color: #000; font-weight: 400; font-size: 0.8em;">寫程式、看風景</span></h2>
+            </div>
         </div>
         <!-- 我的經歷區塊 -->
         <div class="section" id="experience-section">
-            <h2>我的經歷</h2>
-            <p>
-                學過Python、JavaScript、HTML/CSS、C++ 等。<br>
-                專案經驗:<br>
-                和他人研究 <a href="#" id="car-link">自走車</a><br>
-                簡易問答機器人(未完成)<br>
-                簡易紅外線距離感測<a href="#" id="machine-link">機器</a>
-            </p>
+            <div class="info-row">
+                <!-- 技能區塊 -->
+                <div class="info-block">
+                    <h2><span class="emoji">💻</span> 技能 Skills</h2>
+                    <ul>
+  <li>HTML / CSS</li>
+  <li>JavaScript</li>
+  <li>Git / GitHub</li>
+  <li>Python / C / C++</li>
+</ul>
+                </div>
+                <!-- 專案經驗區塊 -->
+                <div class="info-block">
+                    <h2><span class="emoji">🗂️</span> 專案經驗</h2>
+                    <ul>
+                        <li>和他人研究 <a href="#" id="car-link">自走車</a></li>
+                        <li>簡易問答機器人(未完成</li>
+                        <li>簡易紅外線距離感測<a href="#" id="machine-link">機器</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- 專題作業區塊 -->
         <div class="section" id="project-section">
-            <h2>專題作業</h2>
+            <h2>📖專題作業</h2>
             <ul style="text-align:left; list-style:none; padding-left:0;">
                 <li style="padding-left:80px;"><a href="static/waterpuzzle/index.html" target="_blank">功課一:Waterpuzzle</a></li>
                 <li style="padding-left:80px;"><a href="static/multiplication/index.html" target="_blank">功課二:multiplication</a></li>
