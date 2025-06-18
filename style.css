@@ -98,6 +98,10 @@ body {
   margin: 24px 0;
 }
 
+h2 {
+  padding: 2fr;
+}
+
 /* 社群圖片按鈕樣式 */
 .social-icon {
   width: 40px;
